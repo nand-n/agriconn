@@ -14,9 +14,18 @@ import './Modals/index.css'
 import ProfileModal from './Modals/Profile'
 
 function Header() {
-  const handleProfile=() => {
-    return ProfileModal;
-   }
+
+  const [isOpen, setIsOpen] = useState(false);
+
+   const handleOpen = () => {
+    setIsOpen(true);
+  };
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+  // const handleProfile=() => {
+  //   return ProfileModal;
+  //  }
 
   const [theme,setTheme]=useState('light')
 
@@ -81,10 +90,11 @@ function Header() {
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={ {scale:0.9}}
-          onClick={() => handleProfile}
+          onClick={ handleOpen}
           className=" btn inline-flex space-x-5 items-center justify-start ml-5 ">
           <img src={ person} className="w-fit h-fit" alt="account"/>
-          </motion.button>
+        </motion.button>
+        <ProfileModal isOpen={isOpen} onClose={handleClose} />
   </div>
 </nav>
   )

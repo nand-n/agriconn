@@ -1,9 +1,23 @@
 import React from 'react'
+import downloadbtn from '../../assets/Agri-Connect/downloadbtn.png'
+import { motion } from 'framer-motion'
 
 function MarketData() {
+  const handleDownload = () => {
+    
+  }
   return (
-    <div className='mt-[99px] mb-[99px]  w-screen h-screen pt-[113px] px-[77px] '>
-      <h1 className='text-[36px] font-bold mb-2 text-center'>Market Data</h1>
+    <div className=' mt-[99px] mb-[99px]  w-screen  pt-[50px] px-[77px] '>
+      <div className="flex justify-between">
+      <h1 className='text-[35px] text-gray-700 font-bold mb-2 text-start'>Market Data</h1>
+        <motion.button
+           whileHover={{ scale: 1.1 }}
+          whileTap={ {scale:0.9}}
+          onClick={handleDownload}
+          className='bg-gray-100 hover:bg-gray-300 text-white  pt-[3px] pb-[3.17px] px-[5px] rounded-circle' >
+          <img src={ downloadbtn } alt='donload Btn'/>
+      </motion.button> 
+      </div>
       <table className='w-full bg-gray-700'>
         <thead className='bg-gray-700 border-b-2 border-l-2 border-r-2 border-gray-800 rounded-lg'>
           <tr>
