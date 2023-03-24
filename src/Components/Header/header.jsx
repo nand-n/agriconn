@@ -9,6 +9,7 @@ import './Modals/index.css'
 
 
 // import search from './search.png'
+// import search from './search.png'
 
 import ProfileModal from './Modals/Profile'
 
@@ -44,27 +45,28 @@ function Header() {
         </Link>
          <Link
           className="text-gray-800 font-bold mx-3 hidden sm:block"
-          to="/climate"
+          to="/market-data"
         >
           Market Data
         </Link>
         <Link
           className="text-gray-800 font-bold mx-3 hidden sm:block"
-          to="/soil"
+          to="/blog"
         >
+          Blog
           Blog
         </Link>
          <Link
           className="text-gray-800 font-bold mx-3 hidden sm:block"
-          to="/disease"
+          to="/about"
         >
           About Us
         </Link>
          <Link
           className="text-gray-800 font-bold mx-3 hidden sm:block"
-          to="/market-data"
+          to="/contact"
         >
-          Contact us
+          Market Data
         </Link>
         <div className="inline-flex space-x-10 items-center justify-start ml-5">
         <div className="flex w-12 h-7">
