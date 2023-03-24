@@ -56,15 +56,26 @@
 
 
 
+# FROM node as builder
+# WORKDIR /app
+# COPY package*.json ./
+# RUN npm install 
+# COPY . .
+# RUN npm run build
+# EXPOSE 8000
+
+
+# FROM nginx
+# COPY --from=builder /app/build /usr/share/nginx/html
+
 FROM node as builder
 WORKDIR /app
-# COPY package.json yarn.lock ./
 COPY package*.json ./
 RUN npm install 
 COPY . .
 RUN npm run build
-EXPOSE 8000
-
 
 FROM nginx
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=builder /app/build /usr/share/nginx/html
+EXPOSE 8000

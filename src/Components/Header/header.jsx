@@ -8,7 +8,8 @@ import { motion } from 'framer-motion'
 import './Modals/index.css'
 
 
-import search from './search.png'
+// import search from './search.png'
+
 import ProfileModal from './Modals/Profile'
 
 function Header() {
@@ -45,25 +46,25 @@ function Header() {
           className="text-gray-800 font-bold mx-3 hidden sm:block"
           to="/climate"
         >
-          Weather & Climate
+          Market Data
         </Link>
         <Link
           className="text-gray-800 font-bold mx-3 hidden sm:block"
           to="/soil"
         >
-          Soil Type
+          Blog
         </Link>
          <Link
           className="text-gray-800 font-bold mx-3 hidden sm:block"
           to="/disease"
         >
-          Disease Detection
+          About Us
         </Link>
          <Link
           className="text-gray-800 font-bold mx-3 hidden sm:block"
           to="/market-data"
         >
-          Market Data
+          Contact us
         </Link>
         <div className="inline-flex space-x-10 items-center justify-start ml-5">
         <div className="flex w-12 h-7">
@@ -71,7 +72,7 @@ function Header() {
               <div className={`flex items-start justify-between p-1 mx-auto bg-white shadow rounded-full ${
         theme === "light" ? "light-theme" : "dark-theme"
       }`}>
-                <img className="w-fit h-fit" src={themeimg} />
+                {/* <img className="w-fit h-fit" src={themeimg} /> */}
               </div>
             </div>
     </div>
