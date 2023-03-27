@@ -7,10 +7,6 @@ import themeimg from '../../assets/Agri-Connect/theme.png'
 import { motion } from 'framer-motion'
 import './Modals/index.css'
 
-
-// import search from './search.png'
-// import search from './search.png'
-
 import ProfileModal from './Modals/Profile'
 
 function Header() {
@@ -82,7 +78,7 @@ function Header() {
               <div className={`flex items-start justify-between p-1 mx-auto bg-white shadow rounded-full ${
         theme === "light" ? "light-theme" : "dark-theme"
       }`}>
-                {/* <img className="w-fit h-fit" src={themeimg} /> */}
+                <img className="w-fit h-fit" src={themeimg} alt='theme'/>
               </div>
             </div>
     </div>

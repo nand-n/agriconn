@@ -10,6 +10,7 @@ import Header from './Components/Header/header'
 import Home from './Components/Home/home';
 import MarketData from './Components/MarketData/marketData'
 import MarketDataTable from './Components/MarketData/MarketDataTable';
+import MarketDataTableUpload from './Components/MarketData/MarketDataUpload';
 import Soil from './Components/Soil/soil'
 import Register from './Componentss/User/Register';
 import SignIn from './Componentss/User/Signin';
@@ -30,7 +31,9 @@ function App() {
             <Route path='/soil' element={<Soil />} />
             <Route path='/disease' element={<Disease />} />
               <Route path='/market-data' element={<MarketData />} />
-            <Route path='/market-data-table' element={<MarketDataTable />} />
+              <Route path='/market-data-table' element={<MarketDataTable />} />
+            <Route path='/market-data-upload' element={<MarketDataTableUpload />} />
+              
               
             <Route path='/signin' element={<SignIn />} />
             <Route path='/register' element={<Register />} />

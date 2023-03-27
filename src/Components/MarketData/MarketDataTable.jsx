@@ -1,14 +1,29 @@
 import { saveAs } from 'file-saver';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import XLSX from 'xlsx';
 
 function MarketDataTable() {
   const [data, setData] = useState([]);
 
   // Load data from Excel file
-  const loadData = async () => {
+  // const loadData = async () => {
+  //   try {
+  //     const file = await fetch('./marketdata.xlsx');
+  //     const fileData = await file.arrayBuffer();
+  //     const wb = XLSX.read(fileData, { type: 'buffer' });
+  //     const ws = wb.Sheets['Sheet1'];
+  //     const jsonData = XLSX.utils.sheet_to_json(ws);
+  //     setData(jsonData);
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  // };
+
+  useEffect(() => {
+    const loadData = async () => {
     try {
-      const file = await fetch('./marketdata.xlsx');
+      const file = await fetch('marketdata.xlsx');
+      // console.log(file)
       const fileData = await file.arrayBuffer();
       const wb = XLSX.read(fileData, { type: 'buffer' });
       const ws = wb.Sheets['Sheet1'];
@@ -18,7 +33,8 @@ function MarketDataTable() {
       console.error(error);
     }
   };
-
+    loadData();
+  },[])
   // Download Excel file
   const downloadData = () => {
     const wb = XLSX.utils.book_new();
@@ -40,9 +56,11 @@ function MarketDataTable() {
   };
 
   return (
-    <div className='absolute top-[99px] left-4 z-60'>
-      <button className='z' onClick={loadData}>Load Data</button>
-      <button onClick={downloadData}>Download Data</button>
+    <div className='mt-[99px] top-[99px] left-4 ml-10 z-60 '>
+      <div className=" mt-[80px] pt-[30px] pb-[30px] flex justifycenter ">
+         {/* <button className=' bg-gray-100 p-2 rounded' onClick={loadData}>Load Data</button> */}
+      <button className='bg-gray-100 p-2 rounded-r-xl' onClick={downloadData}>Download Data</button>
+     </div>
       <table className="table-fixed w-full">
         <thead>
           <tr className="bg-gray-100">
