@@ -55,7 +55,7 @@ function Home() {
     subBody2: "Your farm data is stored in the cloud, which allows you access from any computer or iPad/iPhone.",
     subTitle3: "Collect and access your Data easily.",
     subBody3:"Your farm data is stored in the cloud, which allows you access from any computer or iPad/iPhone.",
-    link: '/basics-of-agri-connect',
+    link: '/soil',
     mainImage:`${soillDevice1}`
      }
     setContent(contentSoilInfo)
@@ -87,7 +87,7 @@ function Home() {
     subBody2: "Your farm data is stored in the cloud, which allows you access from any computer or iPad/iPhone.",
     subTitle3: "Collect and access your Data easily.",
     subBody3:"Your farm data is stored in the cloud, which allows you access from any computer or iPad/iPhone.",
-    link: '/basics-of-agri-connect',
+    link: '/farm-mgmt',
     mainImage:`${soillDevice1}`
      }
     setContent(contentFarmMgmt)
@@ -103,7 +103,7 @@ function Home() {
     subBody2: " Remote sensing can help identify areas of farmland that are at risk of disease or pest outbreaks.",
     subTitle3: "Irrigation management",
     subBody3:" To determine when crops need to be irrigated, and how much water is needed. This information can help farmers optimize their irrigation practices, conserve water resources, and reduce their operating costs.",
-    link: '/weather-and-climate',
+    link: '/market-data',
     mainImage:`${soillDevice1}`
       }
     setContent(contentMarketData)
@@ -137,7 +137,7 @@ function Home() {
     subBody2: " Remote sensing can help identify areas of farmland that are at risk of disease or pest outbreaks.",
     subTitle3: "Irrigation management",
     subBody3:" To determine when crops need to be irrigated, and how much water is needed. This information can help farmers optimize their irrigation practices, conserve water resources, and reduce their operating costs.",
-    link: '/weather-and-climate',
+    link: '/deasise',
     mainImage:`${soillDevice1}`
       }
     setContent(contentDeasise)
