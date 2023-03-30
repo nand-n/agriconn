@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 // import { Link } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import firstImg from '../../assets/Agri-Connect/FirstLogo.png'
@@ -20,9 +20,29 @@ import soillDevice1 from '../../assets/Agri-Connect/DataDroneTablet.png'
 import appBg from '../../assets/Agri-Connect/Union.png'
 import appHome from '../../assets/Agri-Connect/appHome.png'
 import ourServices from '../../assets/Agri-Connect/ourServices.png'
-
+import  axios from 'axios'
 // import { motion , useScroll , useTransform } from 'framer-motion'
 function Home() {
+  
+
+  const [farmers,setFarmers] =useState([])
+
+  useEffect(()=>{
+    const farmersCount=async()=>{
+      const url='http://localhost:5000/regitered-farmers';
+    try {
+      const response= await axios(url)
+      setFarmers(response.data.count)
+      console.log(response.data.count)
+    } catch (error) {
+      console.log("Error with internal server or another error!!!")
+    }
+    
+    } 
+    farmersCount()
+
+  },[])
+
   const contentData = {
     title: 'Mange Your Data',
     body: 'The Agri-Connect ecosystem allows you to collect data at every level of your operation and share this data with everyone that matters to you. Growers, farm hands, agronomists, input providers, contractors, banks, accountants, land owners and many other stakeholders are now able to work together on the same set of data.',
@@ -150,7 +170,7 @@ function Home() {
           className=""
         >-
         </motion.div> */}
-      <section className='mt-[80px]'>
+      <section className='mt-[80px] sm:mt-16'>
        
         <div className=" ">
           <div className={` `} >
@@ -185,7 +205,7 @@ function Home() {
         <section id="about-us" className="w-screen mt-[96px] h-[262px] bg-gray-200">
         <div className="flex justify-between pt-[72px] pb-[68px] px-[200px]">
           <div className="relative items-center">
-            <p className='text-[#265A1F] max-w-[200px] text-center text-[58px]'>150,000</p>
+            <p className='text-[#265A1F] max-w-[200px] text-center text-[58px]'>{farmers.length}</p>
             <p className='text-[#265A1F] max-w-[158px] text-center text-[19px]'>Farmers Joined And Impacted</p>
           </div>
           <div className="items-center">

@@ -1,10 +1,15 @@
 import React, { useState } from "react";
-import { Transition } from "@headlessui/react";
+// import { Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
+import { BsMicrosoft, BsGoogle ,BsFacebook } from "react-icons/bs";
+import { AiFillEye } from "react-icons/ai";
+
 import axios from "axios";
 
 const SignIn = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isVisible,setIsVisible] = useState(false)
+    const [error , setErrors] = useState("")
     const [formValues, setFormValues] = useState({
         username: "",
         password: "",
@@ -35,25 +40,33 @@ const SignIn = () => {
         setFormErrors(errors);
 
         if (errors.length === 0) {
-            console.log("Form submitted");
+            console.log("Form Submitted");
+            // return <>Form Submited...</>
         }
         //to handle the sign in 
-        const url = 'http://localhost:3001/signin'
+        const url = 'http://localhost:5000/signin'
         const data = {
             username: formValues.username,
             password:formValues.password
         }
         const headers = {
-    // 'Content-Type': 'application/json',
+    'Content-Type': 'application/json',
     // 'Authorization': 'Bearer '
             'Accept': "*/*",
             "User-Agent":"nahom"
   };
-        const response = await axios.post(url, data,{headers: headers})
-        // console.log(response.data.message)
+        const response = await axios.post(url , data , headers) 
+        console.log(response.statusText)
         if (response.status === 200) {
             // localStorage.setItem(response.data)
             localStorage.setItem('myData', JSON.stringify(response.data));
+            // window.navigator.push('/')
+            // console.log(response.status)
+
+        }else{
+            console.log(response.status)
+            setErrors('Wrong Credentials try Again!!')
+            console.log(response.statusText)
         }
     };
 
@@ -144,6 +157,17 @@ const SignIn = () => {
                         <button className="p-2 text-white w-[100px] font-bold bg-blue-900 hover:bg-blue-600  rounded-lg justify-center" type="submit" >Sign In </button>
 
                         </div>
+                        <div className="flex flex-1 justify-center">
+                            OR
+                        </div>
+                        <div className="flex justify-evenly  gap-1 mt-4 ">
+
+                        <BsMicrosoft className="w-5 h-5" color="#0F3A62 hover:text-[#007ff7]" />
+                        <BsGoogle color="#0F3A62 "  className="w-5 h-5 hover:text-[#007ff7]"/>
+                        {/* <BsMicrosoft color="#0F3A62" /> */}
+                        <BsFacebook color="#0F3A62"  className="w-5 h-5 hover:text-[#007ff7]"/>
+         
+        </div>
                     </form>
                 </div>
             </div>

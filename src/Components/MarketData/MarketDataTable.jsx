@@ -1,6 +1,6 @@
 import { saveAs } from 'file-saver';
 import { useEffect, useState } from 'react';
-import XLSX from 'xlsx';
+import {read ,utils ,write} from 'xlsx';
 
 function MarketDataTable() {
   const [data, setData] = useState([]);
@@ -25,9 +25,9 @@ function MarketDataTable() {
       const file = await fetch('marketdata.xlsx');
       // console.log(file)
       const fileData = await file.arrayBuffer();
-      const wb = XLSX.read(fileData, { type: 'buffer' });
+      const wb = read(fileData, { type: 'buffer' });
       const ws = wb.Sheets['Sheet1'];
-      const jsonData = XLSX.utils.sheet_to_json(ws);
+      const jsonData = utils.sheet_to_json(ws);
       setData(jsonData);
     } catch (error) {
       console.error(error);
@@ -37,10 +37,10 @@ function MarketDataTable() {
   },[])
   // Download Excel file
   const downloadData = () => {
-    const wb = XLSX.utils.book_new();
-    const ws = XLSX.utils.json_to_sheet(data);
-    XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
-    const wbout = XLSX.write(wb, { bookType: 'xlsx', type: 'binary' });
+    const wb = utils.book_new();
+    const ws = utils.json_to_sheet(data);
+    utils.book_append_sheet(wb, ws, 'Sheet1');
+    const wbout = write(wb, { bookType: 'xlsx', type: 'binary' });
     const blob = new Blob([s2ab(wbout)], { type: 'application/octet-stream' });
     saveAs(blob, 'marketdata.xlsx');
   };

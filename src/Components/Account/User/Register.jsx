@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 const Register = () => {
+    const[word ,setWord] =useState('Choose One')
     const [isOpen, setIsOpen] = useState(false);
     const [formValues, setFormValues] = useState({
         username: "",
@@ -24,7 +25,8 @@ const Register = () => {
 
         e.preventDefault();
 
-        // Form validation
+        try {
+            // Form validation
         const errors = [];
 
         if (formValues.username === "") {
@@ -49,7 +51,7 @@ const Register = () => {
             console.log("Form submitted");
         }
         //to handle the sign in 
-        const url = 'http://localhost:3001/register'
+        const url = 'http://localhost:5000/register-farmer'
         const data = {
             username: formValues.username,
             password: formValues.password,
@@ -60,6 +62,12 @@ const Register = () => {
         if (response.status === 200) {
             // localStorage.setItem(response.data)
             localStorage.setItem('myData', JSON.stringify(response.data));
+        }
+        if(response.status === 500){
+            console.log("Error response",response.data)
+        }
+        } catch (error) {
+         console.log(error)
         }
 
        
@@ -82,8 +90,34 @@ const Register = () => {
     return (
         <div className="min-h-screen bg-gray-100 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
             <div className="sm:mx-auto sm:w-full sm:max-w-md">
-                <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-                    Register new user account
+                <div className="mt-[99px] flex justify-center gap-4">
+                    <button onClick={()=>setWord('Farmer')} className="w-[20vh] h-[10vh] bg-gray-300 rounded-xl hover:bg-black hover:text-white">
+                        <p className="text-center p-2 font-bold ">Farmer</p>
+                    </button>
+                    <button onClick={()=>setWord('Agro Bussiness')} className="w-[20vh] h-[10vh] bg-gray-300 rounded-xl hover:bg-black hover:text-white">
+                        <p className="text-center p-2 font-bold ">
+                        Agro Business
+
+                        </p>
+                    </button>
+                    <button onClick={()=>setWord('Agricultural Community')}  className="w-[20vh] h-[10vh] bg-gray-300 rounded-xl hover:bg-black hover:text-white">
+                        <p  className="text-center p-2 font-bold"> 
+                        Agricultural Community
+
+                        </p>
+                    </button>
+                    <button  onClick={()=>setWord('DEA Agent')}  className="w-[20vh] h-[10vh] bg-gray-300 rounded-xl text-center hover:bg-black hover:text-white">
+                        <p className="text-center p-2 font-bold">
+                        DEA Agent
+
+                        </p>
+                    </button>
+                    
+                    
+                </div>
+
+                <h2 className="mt-[99px] text-center text-3xl font-extrabold text-gray-900">
+                    Register new {word} account
                 </h2>
                 <p className="mt-2 text-center text-sm text-gray-600">
                     Or{" "}
