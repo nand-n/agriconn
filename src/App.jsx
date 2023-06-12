@@ -16,13 +16,18 @@ import MarketDataTable from './Components/MarketData/MarketDataTable';
 import MarketDataTableUpload from './Components/MarketData/MarketDataUpload';
 import Soil from './Components/Soil/soil'
 import Partners from './Partners/Partners';
+import Basics from './Components/Basics/Basics';
+import Weatherandclimate from './Components/Weatherandclimate/Weatherandclimate';
+import Farmmgmt from './Components/Farmmgmt/Farmmgmt';
 
 
 function App() {
+  document.title ="Adis Gebrena"
   
 
   return (
     <>
+    
       <BrowserRouter>
        <div className='overflow-hidden'>
         <Header />
@@ -43,6 +48,15 @@ function App() {
             <Route path='/climate-winy' element={<ClimateWindy />} />
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={ <Contact />} />
+
+
+            <Route path='/basics-of-Adis%20Gebrena' element={ <Basics />} />
+            <Route path='/weather-and-climate' element={ <Weatherandclimate />} />
+            <Route path='/soil' element={ <Soil />} />
+            <Route path='/deasise' element={ <Disease />} />
+            <Route path='/farm-mgmt' element={ <Farmmgmt />} />
+
+
           </Routes>
         </main>
       </div>

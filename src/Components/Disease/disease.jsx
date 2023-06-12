@@ -2,7 +2,7 @@ import React from 'react'
 
 function Disease() {
   return (
-    <div>disease</div>
+    <div className='w-screen h-screen'>disease</div>
   )
 }
 

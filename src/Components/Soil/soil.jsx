@@ -2,7 +2,7 @@ import React from 'react'
 
 function Soil() {
   return (
-    <div>soil type</div>
+    <div className='w-screen h-screen'>soil type</div>
   )
 }
 

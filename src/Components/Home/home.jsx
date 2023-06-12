@@ -23,7 +23,6 @@ import  axios from 'axios'
 // import { motion , useScroll , useTransform } from 'framer-motion'
 function Home() {
   
-  document.title ="Adis Gebrena"
   const [farmers,setFarmers] =useState([])
 
   useEffect(()=>{
