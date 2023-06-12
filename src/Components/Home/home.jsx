@@ -208,17 +208,17 @@ function Home() {
             <p className='text-[#265A1F] max-w-[158px] text-center text-[19px]'>Farmers Joined And Impacted</p>
           </div>
           <div className="items-center">
-            <p className='text-[#265A1F] max-w-[200px] text-[58px]'>87,000</p>
+            <p className='text-[#265A1F] max-w-[200px] text-[58px]'>0</p>
             <p className='text-[#265A1F] max-w-[158px] text-[19px]'>AGRO-BUSINESSES
 HELPED</p>
           </div>
-          <div className="">
-            <p className='text-[#265A1F] max-w-[200px] text-[58px]'>790+</p>
-            <p className='text-[#265A1F] max-w-[158px] text-[19px]'>AGRICULTURAL
+          <div className="items-center">
+            <p className='text-[#265A1F] max-w-[200px] text-[58px]'>0+</p>
+            <p className='text-[#265A1F] max-w-[158px] text-[15px]'>AGRICULTURAL
 COMMUNITY CREATED</p>
           </div>
           <div className="">
-            <p className='text-[#265A1F] max-w-[200px] text-[58px]'>29%</p>
+            <p className='text-[#265A1F] max-w-[200px] text-[58px]'>0%</p>
             <p className='text-[#265A1F] max-w-[158px] text-[18px]'>AVERAGE ANNUAL INCREASE
 IN FARMER’S INCOME</p>
           </div>
