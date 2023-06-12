@@ -15,6 +15,7 @@ import MarketData from './Components/MarketData/marketData'
 import MarketDataTable from './Components/MarketData/MarketDataTable';
 import MarketDataTableUpload from './Components/MarketData/MarketDataUpload';
 import Soil from './Components/Soil/soil'
+import Partners from './Partners/Partners';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Routes >
             <Route path='/' element={<Home />} />
             <Route path='/account' element={<Account />} />
+            <Route path='/partners' element={<Partners />} />
             <Route path='/climate' element={<Climate />} />
             <Route path='/soil' element={<Soil />} />
             <Route path='/disease' element={<Disease />} />

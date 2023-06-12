@@ -56,9 +56,9 @@ function Header() {
         </Link>
         <Link
           className="text-gray-800 font-bold mx-3 hidden sm:block"
-          to="/partners"
+          to="/blog"
         >
-          Blog
+          Blogs
         </Link>
          <Link
           className="text-gray-800 font-bold mx-3 hidden sm:block"
