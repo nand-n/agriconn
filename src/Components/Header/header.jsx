@@ -50,9 +50,9 @@ function Header() {
         </Link>
          <Link
           className="text-gray-800 font-bold mx-3 hidden sm:block"
-          to="/market-data"
+          to="/partners"
         >
-          Market Data
+          Partners
         </Link>
         <Link
           className="text-gray-800 font-bold mx-3 hidden sm:block"
@@ -70,7 +70,7 @@ function Header() {
           className="text-gray-800 font-bold mx-3 hidden sm:block"
           to="/contact"
         >
-          Market Data
+          Contact Us
         </Link>
         <div className="inline-flex space-x-10 items-center justify-start ml-5">
         <div className="flex w-12 h-7">
