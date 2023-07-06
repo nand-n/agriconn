@@ -43,7 +43,7 @@ function Home() {
 
   const contentData = {
     title: 'Manage Your Data',
-    body: 'The Adis Gebrena ecosystem allows you to collect data at every level of your operation and share this data with everyone that matters to you. Growers, farm hands, agronomists, input providers, contractors, banks, accountants, land owners and many other stakeholders are now able to work together on the same set of data.',
+    body: 'The Agri-connect ecosystem allows you to collect data at every level of your operation and share this data with everyone that matters to you. Growers, farm hands, agronomists, input providers, contractors, banks, accountants, land owners and many other stakeholders are now able to work together on the same set of data.',
     imageIcn: "cloud",
     subTitle1: "Collect and access your Data easily.",
     subBody1: "Your farm data is stored in the cloud, which allows you access from any computer or iPad/iPhone.",
@@ -65,7 +65,7 @@ function Home() {
     
      const contentSoilInfo = {
     title: 'Soil Info',
-    body: 'The Adis Gebrena ecosystem allows you to collect data at every level of your operation and share this data with everyone that matters to you. Growers, farm hands, agronomists, input providers, contractors, banks, accountants, land owners and many other stakeholders are now able to work together on the same set of data.',
+    body: 'The Agri-connect ecosystem allows you to collect data at every level of your operation and share this data with everyone that matters to you. Growers, farm hands, agronomists, input providers, contractors, banks, accountants, land owners and many other stakeholders are now able to work together on the same set of data.',
     imageIcn: "cloud",
     subTitle1: "Collect and access your Data easily.",
     subBody1: "Your farm data is stored in the cloud, which allows you access from any computer or iPad/iPhone.",
@@ -81,7 +81,7 @@ function Home() {
   const handleBasicsofAgriConnect = () => {
      const contentDataBasics = {
     title: 'Manage Your Data',
-    body: 'The Adis Gebrena ecosystem allows you to collect data at every level of your operation and share this data with everyone that matters to you. Growers, farm hands, agronomists, input providers, contractors, banks, accountants, land owners and many other stakeholders are now able to work together on the same set of data.',
+    body: 'The Agri-connect ecosystem allows you to collect data at every level of your operation and share this data with everyone that matters to you. Growers, farm hands, agronomists, input providers, contractors, banks, accountants, land owners and many other stakeholders are now able to work together on the same set of data.',
     imageIcn: "cloud",
     subTitle1: "Collect and access your Data easily.",
     subBody1: "Your farm data is stored in the cloud, which allows you access from any computer or iPad/iPhone.",
@@ -97,7 +97,7 @@ function Home() {
   const handleFarmMgmt = ()=>{
      const contentFarmMgmt = {
     title: 'Farm Managment',
-    body: 'The Adis Gebrena ecosystem allows you to collect data at every level of your operation and share this data with everyone that matters to you. Growers, farm hands, agronomists, input providers, contractors, banks, accountants, land owners and many other stakeholders are now able to work together on the same set of data.',
+    body: 'The Agri-connect ecosystem allows you to collect data at every level of your operation and share this data with everyone that matters to you. Growers, farm hands, agronomists, input providers, contractors, banks, accountants, land owners and many other stakeholders are now able to work together on the same set of data.',
     imageIcn: "cloud",
     subTitle1: "Collect and access your Data easily.",
     subBody1: "Your farm data is stored in the cloud, which allows you access from any computer or iPad/iPhone.",
@@ -173,7 +173,7 @@ function Home() {
         <div className="">
           <div className={` `} >
 
-            <img className='w-screen h-full' src={ firstImg} alt="" />
+            <img className='w-screen h-full' src={firstImg} alt="" />
             <div className="absolute top-[200px] left-[142px] ">
                 <h1 className=' text-[#FFC700] text-[56px] font-serif font-bold' >
               The Future of Agriculture
@@ -182,7 +182,7 @@ function Home() {
                 <h1 className='text-white text-[56px] font-serif font-bold' >
               Is Now.
               </h1>
-              <h1 className='text-[#FFC700] text-[56px] font-serif font-bold'>Adis Gebrena.</h1>
+              <h1 className='text-[#FFC700] text-[56px] font-serif font-bold'>Agri-Connect.</h1>
             </div>
               <p className=' text-[#ffffff] text-[24px] text-bold max-w-3xl font-bold mt-5'> Data Driven Agriculture For A better Productivity </p>
               <p className='text-[#ffffff] text-[16px] max-w-[638px] mt-1'> Data Driven Agriculture is the best way of Agriculture that makes the Agriculturemore productive that makes us rich and another shit  </p>
@@ -226,12 +226,12 @@ IN FARMER’S INCOME</p>
       <section className='flex justify-center space-x-[50px] mt-[99px]' >
         <div className="bg-[#F4F4F4] w-[525px] h-[385px] rounded-xl pt-[37px] pl-[87px]">
           <img src={computer} alt="computer" />
-          <h1 className='text-[#01312C] text-[18px] font-medium mt-[33.5px] '> Adis Gebrena is a data managment ecosystem</h1>
+          <h1 className='text-[#01312C] text-[18px] font-medium mt-[33.5px] '> Agri-connect is a data managment ecosystem</h1>
           <p className='w-[394px] text-[#01312C] text-[15px] mt-2'> Farm Planning, Budgeting, Track and Manage Product Inputs, Job Management, Compliance, Agronomy, Logistics & Grower Services, Precision.</p>
         </div>
         <div className="bg-[#F4F4F4] w-[525px] h-[385px] rounded-xl  pt-[21px] pl-[87px]">
           <img src={cloudUP} alt="cloud" />
-          <h1 className='text-[#01312C] text-[18px] font-medium mt-[33.5px]'> Adis Gebrena is used by:</h1>
+          <h1 className='text-[#01312C] text-[18px] font-medium mt-[33.5px]'> Agri-connect is used by:</h1>
           <p className='w-[394px] text-[#01312C] text-[15px] mt-2'> Growers, Agronomists, Retailers, Application Contractors, Soil Samplers, anyone providing a service to crop growers.</p>
         </div>
       </section>
@@ -268,7 +268,7 @@ IN FARMER’S INCOME</p>
           <img src={ soillMachine} alt="dataDrivenAgriculture"/>
         </div>
         <div className="items-start max-w-[442px] h-[291px] ">
-          <h1 className='text-[25px] w-[440px]'>How Does Adis Gebrena help on the farm</h1>
+          <h1 className='text-[25px] w-[440px]'>How Does Agri-connect help on the farm</h1>
           <h2 className='text-[12px]'>Adis Gebrena has a unique structured data system which means that you can take all your historical farm records and data shared from advisors, and turn them into unparalleled insights for more profitable decisions.</h2>
           <div className="flex justify-start gap-x-3 mt-5">
             <img src={thunderIcn} className="w-fit h-fit"  alt="" />
@@ -302,7 +302,7 @@ IN FARMER’S INCOME</p>
       </section>
       <section className='pt-[99px] w-screen h-[149px] flex justify-center gap-4 mb-4'>
         <button onClick={handleBasicsofAgriConnect} className=' px-[16px] py-3 border-2 border-[#01312C]   text-[#01312C] hover:bg-[#01312C] rounded-lg hover:text-white '>
-            Adis Gebrena Basics
+            Agri-connect Basics
         </button>
          <button onClick={handleWeatherandClimate} className='px-[16px] py-3 border-2 border-[#01312C]   text-[#01312C] hover:bg-[#01312C] rounded-lg hover:text-white '>
             Wither & Climate 
@@ -359,7 +359,7 @@ IN FARMER’S INCOME</p>
            {/* <section className='flex justify-center space-x-[41px] mt-[99px] pb-[40px] max-w-screen'>
         <div className="items-start max-w-[442px] h-[291px] ">
           <h1 className='text-[25px] w-[440px] font-bold'>Mange Your Data </h1>
-          <h2 className='text-[15px]'>The Adis Gebrena ecosystem allows you to collect data at every level of your operation and share this data with everyone that matters to you. Growers, farm hands, agronomists, input providers, contractors, banks, accountants, land owners and many other stakeholders are now able to work together on the same set of data.</h2>
+          <h2 className='text-[15px]'>The Agri-connect ecosystem allows you to collect data at every level of your operation and share this data with everyone that matters to you. Growers, farm hands, agronomists, input providers, contractors, banks, accountants, land owners and many other stakeholders are now able to work together on the same set of data.</h2>
           <div className="flex justify-start gap-x-3 mt-5">
             <img src={cloudIcn} className="w-fit h-fit"  alt="" />
             <div className="felx justify-start space-x-2 ">
@@ -425,7 +425,7 @@ IN FARMER’S INCOME</p>
             <img src={logoApp} className='w-full h-full' alt="logoSmallApp" />
           </div>
             <div className="w-[500px] ml-5">
-               Adis Gebrena's easy to use apps put all the important information at your fingertips and work seamlessly, even when you don't have an internet connection. It's no wonder they've become the most rated farm management apps on the iTunes App store!
+               Agri-connect's easy to use apps put all the important information at your fingertips and work seamlessly, even when you don't have an internet connection. It's no wonder they've become the most rated farm management apps on the iTunes App store!
           </div>
           
           <div className="flex justify-center mt-5 ">
