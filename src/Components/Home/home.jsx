@@ -168,7 +168,7 @@ function Home() {
           className=""
         >-
         </motion.div> */}
-      <section className='mt-[80px] sm:mt-16'>
+      {/* <section className='mt-[80px] sm:mt-16'>
        
         <div className="">
           <div className={` `} >
@@ -199,7 +199,144 @@ function Home() {
                 <img src={logoXl} alt="logoxl" className=' w-fit h-fit'/>
               </div>
           </div>
-        </section>
+        </section> */}
+{/* <section className="mt-10 sm:mt-16">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <div className="relative">
+      <img className="w-full h-auto sm:h-full" src={firstImg} alt="" />
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+        <h1 className="text-[#FFC700] text-4xl sm:text-5xl font-bold mb-2">
+          The Future of Agriculture
+        </h1>
+        <div className="flex justify-center mb-4">
+          <h1 className="text-white text-4xl sm:text-5xl font-bold">
+            Is Now.
+          </h1>
+          <h1 className="text-[#FFC700] text-4xl sm:text-5xl font-bold">Agri-Connect.</h1>
+        </div>
+        <p className="text-white text-lg sm:text-xl mb-4">
+          Data-Driven Agriculture for Better Productivity
+        </p>
+        <p className="text-white text-base sm:text-lg mb-4">
+          Data-Driven Agriculture is the key to improving productivity and achieving sustainable growth. Discover how Agri-Connect leverages advanced technologies to empower farmers and transform the agricultural landscape.
+        </p>
+        <div>
+          <Link
+            to="/signin"
+            className="bg-[#ffffff] border-b-4 shadow text-[#022e0b] font-bold hover:bg-[#022e0b] hover:shadow-2xl hover:text-white hover:font-bold px-8 py-3 rounded-full text-base sm:text-lg"
+          >
+            Get Started
+          </Link>
+        </div>
+      </div>
+    </div>
+    <div className="flex items-center justify-center">
+      <img src={logoXl} alt="logoxl" className="w-3/4 sm:w-full max-w-xs sm:max-w-none" />
+    </div>
+  </div>
+</section> */}
+
+{/* <section className="mt-10 sm:mt-16">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <div className="relative">
+      <img className="w-full h-auto sm:h-full" src={firstImg} alt="" />
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6 sm:p-10">
+        <h1 className="text-[#FFC700] text-4xl sm:text-5xl font-bold mb-2">
+          The Future of Agriculture
+        </h1>
+        <div className="flex justify-center mb-4">
+          <h1 className="text-white text-4xl sm:text-5xl font-bold">
+            Is Now.
+          </h1>
+          <h1 className="text-[#FFC700] text-4xl sm:text-5xl font-bold">Agri-Connect.</h1>
+        </div>
+        <p className="text-white text-lg sm:text-xl mb-4">
+          Data-Driven Agriculture for Better Productivity
+        </p>
+        <p className="text-white text-base sm:text-lg mb-4">
+          Data-Driven Agriculture is the key to improving productivity and achieving sustainable growth. Discover how Agri-Connect leverages advanced technologies to empower farmers and transform the agricultural landscape.
+        </p>
+        <div>
+          <Link
+            to="/signin"
+            className="bg-[#ffffff] border-b-4 shadow text-[#022e0b] font-bold hover:bg-[#022e0b] hover:shadow-2xl hover:text-white hover:font-bold px-8 py-3 rounded-full text-base sm:text-lg"
+          >
+            Get Started
+          </Link>
+        </div>
+      </div>
+    </div>
+    <div className="flex items-center justify-center">
+      <img src={logoXl} alt="logoxl" className="w-2/3 sm:w-4/5 max-w-md" />
+    </div>
+  </div>
+</section> */}
+{/* <section className="mt-10 sm:mt-16">
+  <div className="relative h-screen">
+    <img className="w-full h-full object-cover" src={firstImg} alt="" />
+    <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6 sm:p-10">
+      <h1 className="text-[#FFC700] text-4xl sm:text-5xl font-bold mb-2">
+        The Future of Agriculture
+      </h1>
+      <div className="flex justify-center mb-4">
+        <h1 className="text-white text-4xl sm:text-5xl font-bold">
+          Is Now.
+        </h1>
+        <h1 className="text-[#FFC700] text-4xl sm:text-5xl font-bold">Agri-Connect.</h1>
+      </div>
+      <p className="text-white text-lg sm:text-xl mb-4">
+        Data-Driven Agriculture for Better Productivity
+      </p>
+      <p className="text-white text-base sm:text-lg mb-4">
+        Data-Driven Agriculture is the key to improving productivity and achieving sustainable growth. Discover how Agri-Connect leverages advanced technologies to empower farmers and transform the agricultural landscape.
+      </p>
+      <div>
+        <Link
+          to="/signin"
+          className="bg-[#ffffff] border-b-4 shadow text-[#022e0b] font-bold hover:bg-[#022e0b] hover:shadow-2xl hover:text-white hover:font-bold px-8 py-3 rounded-full text-base sm:text-lg"
+        >
+          Get Started
+        </Link>
+      </div>
+    </div>
+  </div>
+</section> */}
+
+
+<section className="mt-10 sm:mt-16">
+  <div className="relative h-screen">
+    <img className="w-full h-full object-cover object-center" src={firstImg} alt="" />
+    <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6 sm:p-10">
+      <h1 className="text-[#FFC700] text-4xl sm:text-5xl font-bold mb-2">
+        The Future of Agriculture
+      </h1>
+      <div className="flex justify-center mb-4">
+        <h1 className="text-white text-4xl sm:text-5xl font-bold">
+          Is Now.
+        </h1>
+        <h1 className="text-[#FFC700] text-4xl sm:text-5xl font-bold">Agri-Connect.</h1>
+      </div>
+      <p className="text-white text-lg sm:text-xl mb-4">
+        Data-Driven Agriculture for Better Productivity
+      </p>
+      <p className="text-white text-base sm:text-lg mb-4">
+        Data-Driven Agriculture is the key to improving productivity and achieving sustainable growth. Discover how Agri-Connect leverages advanced technologies to empower farmers and transform the agricultural landscape.
+      </p>
+      <div>
+        <Link
+          to="/signin"
+          className="bg-[#ffffff] border-b-4 shadow text-[#022e0b] font-bold hover:bg-[#022e0b] hover:shadow-2xl hover:text-white hover:font-bold px-8 py-3 rounded-full text-base sm:text-lg"
+        >
+          Get Started
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
         <section id="about-us" className="w-screen mt-[96px] h-[262px] bg-gray-200">
         <div className="flex justify-between pt-[72px] pb-[68px] px-[200px]">
           <div className="relative items-center">
